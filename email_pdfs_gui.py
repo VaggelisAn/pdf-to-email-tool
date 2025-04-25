@@ -151,7 +151,7 @@ class PDFMailerApp:
             return
 
         pdf_files = get_sorted_pdf_files(folder)
-        ignored_emails = {"sinaimonastery@yahoo.com", "sinaimonastery@hotmail.com", "monasteryofsinai@gmail.com"}  # Add known sender emails here
+        ignored_emails = {}  # Add known sender emails here
         email_jobs = []
 
         for file in pdf_files:
